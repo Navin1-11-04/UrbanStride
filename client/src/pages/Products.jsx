@@ -39,7 +39,7 @@ function Products() {
 
   const getProducts = async () => {
     try {
-      const res = await fetch('http://localhost:3000/products', {
+      const res = await fetch('https://urban-stride-server.vercel.app/products', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -59,7 +59,7 @@ function Products() {
 
   const fetchCartItems = async () => {
     try {
-      const res = await fetch('http://localhost:3000/cart', {
+      const res = await fetch('https://urban-stride-server.vercel.app/cart', {
         method: 'GET',
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -75,7 +75,7 @@ function Products() {
 
   const fetchFavorites = async () => {
     try {
-      const res = await axios.get('http://localhost:3000/favourites', {
+      const res = await axios.get('https://urban-stride-server.vercel.app/favourites', {
         headers: { Authorization: `Bearer ${token}` }
       });
       if (res.status === 200) {
@@ -88,7 +88,7 @@ function Products() {
 
   const handleAddToCart = async (item) => {
     try {
-      const res = await fetch('http://localhost:3000/cart', {
+      const res = await fetch('https://urban-stride-server.vercel.app/cart', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -119,7 +119,7 @@ function Products() {
 
   const handleToggleFavourite = async (item) => {
     try {
-      const url = `http://localhost:3000/favourites`;
+      const url = `https://urban-stride-server.vercel.app/favourites`;
       const isFavourite = favourites.some(fav => fav.id === item.id);
       const method = isFavourite ? 'DELETE' : 'POST';
       

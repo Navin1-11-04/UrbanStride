@@ -26,7 +26,7 @@ function Auth() {
     event.preventDefault();
     try {
       if (isLogin) {
-        const response = await axios.post('http://localhost:3000/user/login', {
+        const response = await axios.post('https://urban-stride-server.vercel.app/user/login', {
           email: userDetails.email,
           password: userDetails.password,
         });
@@ -51,7 +51,7 @@ function Auth() {
             navigate('/');
         }
       } else {
-        const response = await axios.post('http://localhost:3000/user', userDetails);
+        const response = await axios.post('https://urban-stride-server.vercel.app/user', userDetails);
         if (response.status === 200) {
           toast.success('Account created successfully! Please sign in.');
           navigate('/signin');

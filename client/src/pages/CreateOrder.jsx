@@ -15,7 +15,7 @@ function CreateOrder() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/order', {
+      const response = await fetch('https://urban-stride-server.vercel.app/order', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

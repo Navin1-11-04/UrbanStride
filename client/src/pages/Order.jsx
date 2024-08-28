@@ -14,7 +14,7 @@ function Orders() {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await fetch('http://localhost:3000/order', {
+        const response = await fetch('https://urban-stride-server.vercel.app/order', {
           method: 'GET',
           headers: {
             Authorization: `Bearer ${token}`,

@@ -20,7 +20,7 @@ function Cart() {
 
   const getCartItems = async () => {
     try {
-      const res = await fetch(`http://localhost:3000/cart`, {
+      const res = await fetch(`https://urban-stride-server.vercel.app/cart`, {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -39,7 +39,7 @@ function Cart() {
 
   const addItem = async (productId, quantity) => {
     try {
-      const res = await fetch(`http://localhost:3000/cart`, {
+      const res = await fetch(`https://urban-stride-server.vercel.app/cart`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ function Cart() {
 
   const handleRemoveItem = async (itemId) => {
     try {
-      const res = await fetch(`http://localhost:3000/cart/${itemId}`, {
+      const res = await fetch(`https://urban-stride-server.vercel.app/cart/${itemId}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,
