@@ -1,0 +1,19 @@
+.sort-dropdown {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .sort-btn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tool-icon {
+    margin-left: 5px;
+  }
+  

@@ -1,0 +1,98 @@
+.search-wrapper{
+    width:100%;
+    height:55px;
+    position: fixed;
+    inset:0 0 auto 0;
+    z-indeX:999;
+    background-color:#fbfffe;
+    padding:10px 3%;
+    align-items:center;
+    display: flex;
+    gap:10px;
+    transform:translateY(-100%);
+    justify-content: space-between;
+    opacity:0;
+    transition:transform .3s ease,opacity .4s ease-in-out;
+}
+.search-wrapper.show{
+    transform:translateY(0%);
+    opacity:1;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+}
+.search-sub-container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    height:37px;
+    border-radius:40px;
+    padding-right:4px;
+    background-color:#fbfffe;
+    justify-content: center;
+    border:1.5px solid #4f4f4f;
+    outline-offset:1px;
+}
+.search-icon-container{
+    width:30px;
+    border-radius:50%;
+    display: flex;
+    margin:2px 5px 2px 5px;
+    align-items: center;
+    justify-content: center;
+    height:30px;
+    color:#0f0f0f;
+}
+.search-bar{
+    width:calc(100% - 48px);
+    height:100%;
+    border-radius:0 50px 50px 0;
+    border:0;
+    background-color:transparent;
+    font-size:0.85rem !important;
+    font-weight:450 !important;
+    color:#0f0f0f;
+    outline:0;
+}
+.search-cancel-container{
+    width:5%;
+    height:100%;
+    display: flex;
+    align-items:center;
+    justify-content:end;
+}
+.icon-span{
+    display: flex;
+    align-items: center;
+    height:40px;
+    color:#4f4f4f;
+    font-size:1.8rem !important;
+    cursor: pointer;
+}
+.icon-span:hover{
+    color:#0f0f0f;
+}
+.search-sub-container:hover{
+    border:2px solid #0f0f0f;
+}
+.search-bar-logo{
+    height:30px;
+    width:30px;
+}
+@media only screen and (max-width:670px){
+    .search-wrapper{
+        height:55px;
+    }
+    .search-container{
+        width:calc(100% - 40px);
+        padding:10px 0;
+    }
+    .search-logo,.search-cancel-container{
+        width:5% !important;
+    }
+}

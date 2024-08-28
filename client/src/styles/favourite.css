@@ -1,0 +1,126 @@
+.favourite-wrapper {
+    width: 100%;
+    height: calc(100vh - 155px);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding:0px 3%;
+    background-color:#fbfffe;
+    box-sizing: border-box;
+    margin-top:10px;
+    position: relative;
+}
+
+.favourite-header {
+    width: 100%;
+    height:60px;
+    display: flex;
+    align-items:center;
+    justify-content:start;
+}
+.favourites-title{
+    font-size:1.2rem !important;
+    font-weight:520 !important;
+}
+.no_favourite-txt{
+    font-weight:510 !important;
+    font-size:0.9rem !important;
+    text-align: center;
+}
+.no_favourites-container{
+    width:100%;
+    height:100%;
+    background-color:#fbfffe;
+    gap:10px;
+    flex-direction: column;
+}
+.no_favourite-img{
+    font-size:clamp(4rem,9rem + 1rem,15rem);
+    color:hotpink;
+}
+.favourite-list-container {
+    height:calc(100% - 60px);
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content:start;
+    overflow-x: scroll;
+    gap:2vw;
+}
+
+.favourite-list-container::-webkit-scrollbar {
+    height:6px;
+}
+.favourite-list-container::-webkit-scrollbar-thumb {
+    background-color:#707070;
+    border-radius:20px;
+}
+.favourite-list-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.heart-shape{
+    font-size:1.05rem;
+    top:-5px;
+    height:48px;
+    width:48px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:30px;
+    left:-5px;
+    position: absolute;
+    background-color:transparent;
+    color:hotpink;
+    outline:6px solid #fbfffe;
+    outline-offset:-6px;
+}
+.favourite-item {
+    flex:0 0 auto;
+    width:200px;
+    height:300px;
+    display: flex;
+    align-items: center;
+    z-index:2;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 10px;
+    border-radius:8px;
+    transition: transform 0.3s ease;
+    scroll-snap-align: start;
+    padding:15px;
+    transition:all .3s ease;
+    position:relative;
+    background-color:#f7f7f7;
+}
+
+.favourite-item:hover {
+    transform: scale(1.02);
+}
+
+.favourite-img-container {
+    height:200px;
+    width:180px;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.favourite-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+.favourite-info{
+    width:100%;
+    height:20%;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: space-between;
+    font-size:0.83rem !important;
+    color:#0f0f0f;
+    font-weight:520 !important;
+}
