@@ -50,7 +50,7 @@ function Header() {
           <Link to="/authentication" className='user'>
             <FaRegUser className='user-icon' />
             <p className='user-name'>
-              {user ? user : 'Guest'} 
+              {user ? user.email : 'Guest'} 
             </p>
           </Link>
         </div>
