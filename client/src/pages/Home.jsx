@@ -28,21 +28,21 @@ function Home() {
             <div className="featured-products-container">
               <div className="featured-product-card">
                 <img src="https://images.unsplash.com/photo-1536520807309-1f7bae9f8be5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="featured product 1" className='featured-img' />
-                <h3 className='featured-titles'>Lorem, ipsum dolor.</h3>
+                <h3 className='featured-titles'>Off-White x Air Jordan 1</h3>
                 <Link to="/products" className='featured_link'>
                     Discover
                 </Link>
               </div>
               <div className="featured-product-card">
                 <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="featured product 2" className='featured-img' />
-                <h3 className='featured-titles'>Lorem, ipsum dolor.</h3>
+                <h3 className='featured-titles'>Nike Air Force 1 Low</h3>
                 <Link to="/products" className='featured_link'>
                     Discover
                 </Link>
               </div>
               <div className="featured-product-card">
                 <img src="https://images.unsplash.com/photo-1569664665343-eb9b3948bdbb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="featured product 3" className='featured-img' />
-                <h3 className='featured-titles'>Lorem, ipsum dolor.</h3>
+                <h3 className='featured-titles'>Nike Free RN</h3>
                 <Link to="/products" className='featured_link'>
                     Discover
                 </Link>
